@@ -1,0 +1,50 @@
+.menu_hamburguesas{
+    background-color:rgb(238,238,238);
+    width: auto;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    & h2{
+        color: #CB1700;
+    }
+    & h3{
+        color:#507DFF;
+    }
+    & .ad-to-cart-button{
+    font-family: 'Mulis', Sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #FFC200;
+    border-radius: 25px 25px 25px 25px;
+    color: rgb(238,238,238);
+    border: none;
+    padding: 1rem;
+    margin: 1rem;
+    }
+    & .sencilla, .doble, .supreme{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        padding: 1rem;
+    }
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    & .bebidas_boton, .combos_boton, .papas_boton{
+        padding: 1rem;
+        background-color: #FFC200;
+        border-radius: 10px;
+        margin:1rem;
+    }
+    & a{
+        text-decoration: none;
+        color: rgb(238,238,238);
+    }
+
+    
+}

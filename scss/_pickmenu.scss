@@ -1,0 +1,46 @@
+.pick--menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+    height: 900px;
+    background-color: $colormain; 
+    align-items: center;
+    & a{
+        width: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 20px;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        display: flex;
+        align-items: flex-end;
+        text-decoration: none;
+        color: $amarillo;
+        font-size: xx-large;
+        font-family: "Mulish", sans-serif;
+        font-weight: 800;
+          &:hover{
+            transform: scale(1.2,1);
+            width: 30%;
+            height: 50%;
+            font-weight: 800px;
+        }
+    }
+    & .hamburguesas{
+        background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)), url(../Galeria/hamburguesa.webp);
+    }
+    & .papas{
+        background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)), url(../Galeria/50.webp);
+    }
+    & .drinks{
+        background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, .5)), url(../Galeria/merlin_188253867_acb3eef8-762e-4f66-a4b1-37e1e694ed93-articleLarge.webp);
+    }
+    & .combos{
+        background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, .5)),url(../Galeria/comobo_para_dos_res.webp);
+    }
+}   

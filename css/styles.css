@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+.header {
+  background-color: #CB1700;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  padding: 5px;
+  width: auto;
+}
+.header a {
+  text-decoration: none;
+  padding: 5px;
+}
+.header h1 {
+  color: rgb(238, 238, 238);
+  font-family: "Boogaloo", cursive;
+}
+
+.header__menu {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.header__menu ul {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  list-style-type: none;
+}
+.header__menu a {
+  text-decoration: none;
+}
+
+.footer {
+  padding: 10px;
+  margin: 2px 0px 0px 0px;
+  background-color: #F9370A;
+  width: auto;
+}
+.footer ul {
+  list-style-type: none;
+}
+.footer a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+}
+.footer h2 {
+  color: #FFCC01;
+  font-weight: bold;
+}
+
+.usuario {
+  background-color: #FEE8B0;
+  width: auto;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.ingreso__usuario {
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu_hamburguesas {
+  background-color: rgb(238, 238, 238);
+  width: auto;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.menu_hamburguesas h2 {
+  color: #CB1700;
+}
+.menu_hamburguesas h3 {
+  color: #507DFF;
+}
+.menu_hamburguesas .ad-to-cart-button {
+  font-family: "Mulis", Sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color: #FFC200;
+  border-radius: 25px 25px 25px 25px;
+  color: rgb(238, 238, 238);
+  border: none;
+  padding: 1rem;
+  margin: 1rem;
+}
+.menu_hamburguesas .sencilla, .menu_hamburguesas .doble, .menu_hamburguesas .supreme {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  padding: 1rem;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+section .bebidas_boton, section .combos_boton, section .papas_boton {
+  padding: 1rem;
+  background-color: #FFC200;
+  border-radius: 10px;
+  margin: 1rem;
+}
+section a {
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+}
+
+.pick--menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  width: auto;
+  height: 900px;
+  background-color: rgb(238, 238, 238);
+  align-items: center;
+}
+.pick--menu a {
+  width: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 20px;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+  color: #FFCC01;
+  font-size: xx-large;
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+}
+.pick--menu a:hover {
+  transform: scale(1.2, 1);
+  width: 30%;
+  height: 50%;
+  font-weight: 800px;
+}
+.pick--menu .hamburguesas {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Galeria/hamburguesa.webp);
+}
+.pick--menu .papas {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Galeria/50.webp);
+}
+.pick--menu .drinks {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Galeria/merlin_188253867_acb3eef8-762e-4f66-a4b1-37e1e694ed93-articleLarge.webp);
+}
+.pick--menu .combos {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Galeria/comobo_para_dos_res.webp);
+}
+
+@media (max-width: 500px) {
+  .header {
+    background-color: #CB1700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    padding: 5px;
+    width: auto;
+  }
+  .header a {
+    text-decoration: none;
+    color: black;
+  }
+  .menu {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .menu ul {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    list-style-type: none;
+  }
+  .menu a {
+    text-decoration: none;
+  }
+  /* .....................pick--menu .....................*/
+  .pick--menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    height: 1200px;
+    background-color: rgb(238, 238, 238);
+  }
+  .pick--menu a {
+    width: auto;
+    background-color: #9CA777;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 2px;
+    width: 370px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+  }
+  .pick--menu h2 {
+    font-size: xx-large;
+  }
+  .menu_hamburguesas {
+    display: block;
+    height: auto;
+  }
+  .menu_hamburguesas .sencilla, .menu_hamburguesas .doble, .menu_hamburguesas .supreme {
+    display: block;
+    padding: 1rem;
+  }
+  .menu_hamburguesas section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    margin: 2px;
+    width: auto;
+    height: 100px;
+  }
+  .footer {
+    width: auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
